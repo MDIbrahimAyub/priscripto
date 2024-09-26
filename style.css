@@ -1,0 +1,516 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo img {
+    margin-right: 0.5rem;
+    width: 12vw;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+nav ul li a.active {
+    color: #5f6fff;
+    border-bottom: 2px solid #5f6fff;
+}
+
+.create-account {
+    background-color: #5f6fff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    background-color: #5f6fff;
+    color: white;
+    padding: 4rem 5%;
+    border-radius: 20px;
+    margin: 2rem 5%;
+    flex-wrap: wrap;
+    height: 78.6vh;
+}
+
+.hero-content {
+    flex: 1 1 300px;
+    padding-right: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.3vw;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 70px;
+}
+
+.hero p {
+    font-size: 1vw;
+}
+
+.book-appointment {
+    background-color: white;
+    color: #5f6fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline-flex;
+    color: #000;
+    align-items: center;
+}
+
+.book-appointment .arrow {
+    margin-left: 0.5rem;
+}
+
+.doctor-avatars {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.doctor-avatars img {
+    width: 6vw;
+    height: 5vh;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .create-account {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        margin: 1rem 2%;
+        padding: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .book-appointment {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+.speciality {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.speciality1 {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speciality-card {
+    width: 10%;
+    height: 40%;
+}
+
+.s-img {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-img img {
+    width: 60%;
+}
+
+.s-t {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.s-t p {
+    font-size: 1vw;
+    color: gray;
+}
+.speciality-card:hover{
+    transform: translateY(-3px);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.s-img .doctor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.doctor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.doctors-card {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.d-card1 {
+    width: 18%;
+    height: 83%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #a2a5b1;
+    cursor: pointer;
+
+}
+
+.c-img {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: #eaefff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.c-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-text {
+    width: 100%;
+    height: 40%;
+    padding-left: 10px;
+}
+
+.c-text p {
+    font-size: 1vw;
+    padding-top: 10px;
+    color: rgb(20, 177, 20);
+}
+
+.c-text h1 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.c-text h6 {
+    font-size: 1vw;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.d-card1:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease-in-out;
+}
+
+.d-t {
+    text-align: center;
+}
+
+.d-t h1 {
+    font-size: 3vw !important;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.d-t p {
+    padding-bottom: 30px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn a {
+    padding: 10px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    background-color: #eaefff;
+    font-size: 1vw;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    margin-top: 30px;
+}
+
+.banner1 {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    background-color: #5f6fff;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.banner2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-t h1 {
+    font-size: 3vw !important;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.b-t a {
+    padding: 10px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    background-color: #eaefff;
+    font-size: 1vw;
+}
+
+.banner3 {
+    width: 50%;
+    height: 100%;
+}
+
+.banner3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-logo {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.footer-middle ul {
+    list-style: none;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.footer-middle ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-middle ul li a:hover {
+    color: #5f67ea;
+}
+
+.footer-right p {
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.footer-right p a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-right p a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        margin: 0;
+        padding: 10px;
+    }
+}
